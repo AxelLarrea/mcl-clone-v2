@@ -1,0 +1,129 @@
+.product-wrapper {
+    position: relative;
+    display: flex;
+    background-color: #fff;
+    cursor: pointer;
+    min-height: 220px;
+}
+
+.product-wrapper:hover > .add-fav-icon {
+    opacity: 1;
+}
+
+.product-image {
+   padding: 30px;
+}
+
+.product-image img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.product-content {
+    padding: 20px 0;
+    width: 70%;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.brand .offer {
+    width: fit-content;
+    padding: 3px;
+    color: #fff;
+    background-color: #3483FA;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 2px;
+}
+
+.title h2 {
+    font-size: 20px;
+    font-weight: 200;
+    margin: 5px 0;
+}
+
+.add-fav-icon {
+    opacity: 0;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    transition: opacity .1s;
+    z-index: 2;
+}
+
+.add-fav-icon.active > svg {
+    fill: #3483FA;
+}
+
+.add-fav-icon svg {
+    max-width: 25px;
+    max-height: 25px;
+}
+
+.official-store {
+    font-size: 13px;
+    color: rgba(0, 0, 0, .55);
+}
+
+.product-price-rating-wrapper {
+    display: flex;
+    margin-top: 10px;
+}
+
+.product-price span:first-child {
+    font-size: 12px;
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, .55);
+}
+
+.product-price span:last-child {
+    font-size: 14px;
+    color: #00a650;
+}
+
+.product-price div {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.product-price h3 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.product-shipment {
+    display: grid;
+    gap: .8rem;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.international-purchase {
+    color: #2968c8;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.item-shipment-wrapper {
+    display: flex;
+}
+
+.item-shipment {
+    color: #00a650;
+    font-weight: 500;
+}
+
+.full-shipment {
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    font-size: small;
+}
